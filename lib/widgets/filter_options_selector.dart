@@ -65,7 +65,7 @@ void showFilterOptionsSelector({
                       padding: const EdgeInsets.all(12),
                       child: GridView.builder(
                         shrinkWrap: true,
-                        physics: const NeverScrollableScrollPhysics(),
+                        // physics: const NeverScrollableScrollPhysics(),
                         gridDelegate:
                             const SliverGridDelegateWithFixedCrossAxisCount(
                           crossAxisCount: 4,
@@ -125,7 +125,7 @@ void showFilterOptionsSelector({
                 height: gridHeight,
                 padding: const EdgeInsets.symmetric(horizontal: 16),
                 child: GridView.builder(
-                  physics: const NeverScrollableScrollPhysics(),
+                  // physics: const NeverScrollableScrollPhysics(),
                   gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
                     crossAxisCount: 4,
                     childAspectRatio: 2.5,
