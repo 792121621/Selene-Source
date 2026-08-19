@@ -135,7 +135,7 @@ class _VideoPlayerWidgetState extends State<VideoPlayerWidget>
   StreamSubscription<bool>? _playingSubscription;
   StreamSubscription<bool>? _completedSubscription;
   StreamSubscription<Duration>? _durationSubscription;
-  final ValueNotifier<double> _playbackSpeed = ValueNotifier<double>(1.0);
+  final ValueNotifier<double> _playbackSpeed = ValueNotifier<double>(1.25);
   bool _playerDisposed = false;
   VoidCallback? _exitWebFullscreenCallback;
   final Pip _pip = Pip();
@@ -169,6 +169,7 @@ class _VideoPlayerWidgetState extends State<VideoPlayerWidget>
       return;
     }
     _player = Player();
+    await _player!.setRate(_playbackSpeed.value);
     _videoController = VideoController(_player!);
     _setupPlayerListeners();
     if (_currentUrl != null) {
