@@ -78,6 +78,8 @@ class _ShowScreenState extends State<ShowScreen> {
   final List<SelectorOption> _showYearOptions = const [
     SelectorOption(label: '全部', value: 'all'),
     SelectorOption(label: '2020年代', value: '2020s'),
+    SelectorOption(label: '2027', value: '2027'),
+    SelectorOption(label: '2026', value: '2026'),
     SelectorOption(label: '2025', value: '2025'),
     SelectorOption(label: '2024', value: '2024'),
     SelectorOption(label: '2023', value: '2023'),
@@ -85,6 +87,8 @@ class _ShowScreenState extends State<ShowScreen> {
     SelectorOption(label: '2021', value: '2021'),
     SelectorOption(label: '2020', value: '2020'),
     SelectorOption(label: '2019', value: '2019'),
+    SelectorOption(label: '2018', value: '2018'),
+    SelectorOption(label: '2017', value: '2017'),
     SelectorOption(label: '2010年代', value: '2010s'),
     SelectorOption(label: '2000年代', value: '2000s'),
     SelectorOption(label: '90年代', value: '1990s'),
