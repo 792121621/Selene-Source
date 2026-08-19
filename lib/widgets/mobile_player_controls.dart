@@ -418,7 +418,7 @@ class _MobilePlayerControlsState extends State<MobilePlayerControls> {
   }
 
   Future<void> _showSpeedDialog() async {
-    final speeds = [0.5, 0.75, 1.0, 1.5, 2.0];
+    final speeds = [0.5, 0.75, 1.0, 1.25, 1.5, 2.0];
     final currentSpeed = widget.playbackSpeedListenable.value;
     final screenHeight = MediaQuery.of(context).size.height;
     final result = await showModalBottomSheet<double>(
